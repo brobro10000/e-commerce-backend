@@ -10,9 +10,9 @@ router.get('/', async (req, res) => {
     include:
       [
         {
-           model: Product,
-          attributes:['id','product_name','price','stock','category_id',]
-        }        
+          model: Product,
+          attributes: ['id', 'product_name', 'price', 'stock', 'category_id',]
+        }
       ]
   }
   )
@@ -31,7 +31,7 @@ router.get('/:id', async (req, res) => {
       [
         {
           model: Product,
-          attributes:['id','product_name','price','stock','category_id']
+          attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
         }
       ]
   })
@@ -61,14 +61,14 @@ router.put('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
   // delete on tag by its `id` value
-    // delete a category by its `id` value
-    const deleteTag = await Tag.destroy({
-      where: {
-        id: req.params.id
-      }
-    })
-  
-    res.json(deleteTag)
+  // delete a category by its `id` value
+  const deleteTag = await Tag.destroy({
+    where: {
+      id: req.params.id
+    }
+  })
+
+  res.json(deleteTag)
 });
 
 module.exports = router;
