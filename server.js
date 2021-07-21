@@ -12,6 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 // sync sequelize models to the database, then turn on the server
+//We are assuming that force false to allow data to be written and saved into the database
+//as opposed to reverting to initial seeded model with force:true
 sequelize.sync({force: false}).then(()=> {
   app.listen(PORT, () => {
     console.log(`App listening on ${PORT}`)
