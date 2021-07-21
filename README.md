@@ -60,7 +60,7 @@ Sequelize is a package that allows you to add database functionality through jav
 
 Watch my e-commerce backend in action! 
 
-The e-commerce backend in 2 minutes: [Click here!](https://youtu.be/7LOEI1hzmPE)
+The e-commerce backend in 2 minutes: [Click here!](https://youtu.be/Xi4irjqwb08)
 
 A detailed overview: [Click Here!](https://youtu.be/M26DxfUt8bU)
 
